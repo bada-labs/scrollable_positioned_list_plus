@@ -1,6 +1,6 @@
 # 0.4.0
 First release of `scrollable_positioned_list_plus`, a maintained successor of `scrollable_positioned_list` 0.3.8.
-* Replace the `cacheExtent` and `cacheExtentStyle` APIs deprecated in Flutter 3.41 with `ScrollCacheExtent`. Cache sizes are unchanged.
+* Replace the `cacheExtent` and `cacheExtentStyle` APIs deprecated in Flutter 3.44 with `ScrollCacheExtent`. Cache sizes are unchanged.
 * Replace `Matrix4.translate` with `translateByDouble`, use super parameters, and remove null checks left from before null safety.
 * `ItemPosition ==` takes `Object` instead of `dynamic`.
 * Add the `package:scrollable_positioned_list_plus/scrollable_positioned_list_plus.dart` entry point. The original import path keeps working.
