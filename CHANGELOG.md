@@ -4,7 +4,7 @@ First release of `scrollable_positioned_list_plus`, a maintained successor of `s
 * Replace `Matrix4.translate` with `translateByDouble`, use super parameters, and remove null checks left from before null safety.
 * `ItemPosition ==` takes `Object` instead of `dynamic`.
 * Add the `package:scrollable_positioned_list_plus/scrollable_positioned_list_plus.dart` entry point. The original import path keeps working.
-* Requires Dart 3.7 and Flutter 3.41.
+* Requires Flutter 3.44, the first stable release with `ScrollCacheExtent`.
 
 # Changelog of scrollable_positioned_list
 

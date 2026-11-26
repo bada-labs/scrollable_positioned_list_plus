@@ -12,7 +12,7 @@ This is a maintained successor of [`scrollable_positioned_list`](https://pub.dev
 - **Works with current Flutter.** 0.3.8 uses `cacheExtent` and `cacheExtentStyle`, which Flutter deprecated in 3.41 in favor of `ScrollCacheExtent` and will remove. This package uses the new API, with the same cache sizes.
 - **No other deprecated APIs.** `Matrix4.translate`, pre-null-safety checks and a `dynamic` equality operator are replaced with their current equivalents.
 - **Same behavior.** The original test suite (181 tests) runs in this repository and passes unchanged, apart from importing `unawaited` from `dart:async` instead of the retired `pedantic` package.
-- Requires Flutter 3.41 or later, the first version with `ScrollCacheExtent`.
+- Requires Flutter 3.44 or later, the first stable release with `ScrollCacheExtent`.
 
 ## Migrating from `scrollable_positioned_list`
 
