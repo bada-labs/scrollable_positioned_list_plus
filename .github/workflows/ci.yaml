@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        flutter: ['3.41.0', stable]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ matrix.flutter != 'stable' && matrix.flutter || '' }}
+          channel: stable
+      - run: flutter pub get
+      - run: dart format --output=none --set-exit-if-changed lib test example
+        if: matrix.flutter == 'stable'
+      - run: flutter analyze --fatal-infos
+        if: matrix.flutter == 'stable'
+      - run: flutter analyze lib
+        if: matrix.flutter != 'stable'
+      - run: flutter test

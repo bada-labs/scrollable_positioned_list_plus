@@ -1,0 +1,25 @@
+name: scrollable_positioned_list_plus
+description: >-
+  A list with helper methods to programmatically scroll to an item. A maintained
+  successor of scrollable_positioned_list, updated for current Flutter.
+version: 0.4.0
+repository: https://github.com/bada-labs/scrollable_positioned_list_plus
+issue_tracker: https://github.com/bada-labs/scrollable_positioned_list_plus/issues
+topics:
+  - list
+  - scroll
+  - widget
+
+environment:
+  sdk: ^3.7.0
+  flutter: ">=3.41.0"
+
+dependencies:
+  collection: ^1.19.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
